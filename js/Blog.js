@@ -47,7 +47,7 @@ export class Blog {
 
     div.innerHTML = `
     <div class="user">
-      <img src="../assets/user.svg" alt="Ícone de usuário"/>
+      <img src="./assets/user.svg" alt="Ícone de usuário"/>
       <p class="username">name</p>
     </div>
     <h2>title</h2>
@@ -65,12 +65,5 @@ export class Blog {
     div.classList.add('post')
 
     return div
-  }
-}
-
-export class BlogPosts extends Blog {
-  constructor(root) {
-    super(root)
-    this.showPosts()
   }
 }
